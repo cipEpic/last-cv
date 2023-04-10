@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation"
 import { useTheme } from "next-themes"
 import { RiMoonFill, RiSunLine } from "react-icons/ri"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+// import Logo from 'public/logoepic2.svg';
+import Image from "next/image"
+
+// const logo = require('../public/logoepic2.svg') as string;
+
 
 interface NavItem {
   label: string
@@ -25,6 +30,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Projects",
     page: "projects",
   },
+  {
+    label: "Certif",
+    page: "certif",
+  },
 ]
 
 export default function Navbar() {
@@ -33,13 +42,21 @@ export default function Navbar() {
   const pathname = usePathname()
   const [navbar, setNavbar] = useState(false)
   return (
-    <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 sm:px-10 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-3 md:py-1 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold">Hosna Qasmei</h2>
+                <Image
+                  src="/logoepic2.svg"
+                  alt=""
+                  width={150}
+                  height={155}
+                  className="w-30 h-30"
+                />
+                {/* <img src={logo} alt="Logo" className="w-10 h-10" /> */}
+                {/* <h2 className="text-2xl font-bold">Evi Dianasari</h2> */}
               </div>
             </Link>
             <div className="md:hidden">
@@ -55,9 +72,8 @@ export default function Navbar() {
 
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? "block" : "hidden"
-            }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+              }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
@@ -79,7 +95,8 @@ export default function Navbar() {
                   </Link>
                 )
               })}
-              {currentTheme === "dark" ? (
+              {/* {currentTheme === "dark" ? 
+              (
                 <button
                   onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl"
@@ -93,7 +110,8 @@ export default function Navbar() {
                 >
                   <RiMoonFill size={25} />
                 </button>
-              )}
+              )
+              } */}
             </div>
           </div>
         </div>
