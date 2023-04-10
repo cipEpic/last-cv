@@ -13,7 +13,7 @@ const projects = [
   {
     name: "Cisco Networking Academy",
     description: "Students",
-    image: "/cer-cisco.png",
+    image: "/cisco-cer.png",
   },
   {
     name: "Festagama Essay competition 2019",
