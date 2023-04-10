@@ -6,27 +6,35 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "E-Banten",
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Distribution Web app",
+    image: "/porto-1.png",
+    github: "#",
+    link: "https://drive.google.com/file/d/1IQ65vPdmSEQ3R0Sg9En6Z5f7-98fsYuf/view?usp=share_link",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "E-Happystuff",
+    description: "E-commerce Web app",
+    image: "/porto-2.png",
+    github: "https://github.com/cipEpic/E-Happy-Stuff",
+    link: "https://e-happystuff.000webhostapp.com/index.html",
   },
   {
-    name: "Kator Family Photos",
+    name: "CLI Laundryku",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "Laundry app based CLI python and mysql",
+    image: "/porto-3.png",
+    github: "https://github.com/cipEpic/CLI_Laundry",
+    link: "https://youtu.be/Se4_1FQ5ZbQ",
+  },
+  {
+    name: "CeritaKu",
+    description:
+      "Read and Write Novel Web app",
+    image: "/porto-4.png",
+    github: "https://github.com/cipEpic/CeritaKu",
+    link: "https://github.com/cipEpic/CeritaKu",
   },
 ]
 
